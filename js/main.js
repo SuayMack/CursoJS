@@ -79,7 +79,7 @@ console.log(soma(5,10));
 
 function setReplace(frase, nome, novo_nome){
     return frase.replace(nome, novo_nome)
-}*/
+}
 
 var validar = 0;
 function validaIdade(idade) {    
@@ -96,3 +96,45 @@ validaIdade(idade);
 console.log(validar);
 
 //console.log(setReplace("Vai Japão", "Japão", "Brasil"));
+
+// *********** AULA 4 *************/
+
+function clicou(){
+    
+    var clicou = document.getElementById("agradecimento"). innerHTML = "Obrigado por clicar";
+    console.log(clicou);
+    //alert("Obrigado por clicar");
+}
+
+function redirecionar() {
+    window.open("https://google.com.br");
+    //window.location.href = "https://google.com.br";
+}
+/*
+function trocar() {
+    document.getElementById("mousemove").innerHTML = "Obrigada por passar o mouse";
+    //console.log("trocar texto");
+}
+
+function voltar() {
+    document.getElementById("mousemove").innerHTML = "Passe o mouse aqui";
+    //console.log("trocar texto");
+}
+*/
+function trocar(elemento) {
+    elemento.innerHTML = "Obrigada por passar o mouse";
+    //console.log("trocar texto");
+}
+
+function voltar(elemento) {
+    elemento.innerHTML = "Passe o mouse aqui";
+    //console.log("trocar texto");
+}
+
+function load() {
+    alert("Página carregada");
+}
+
+function change(elemento) {
+    console.log(elemento.value);
+}
